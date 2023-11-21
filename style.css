@@ -1,0 +1,526 @@
+/* Global styling for the entire webpage */
+body {
+    margin: auto auto;
+    padding: 0;
+    font-family: A;
+    height: 100vh;
+    width: 60vw;
+  }
+  /* Styling for the header section */
+  header {
+    display: flex;
+    background-color: #26735B; /* Blue color for header */
+    width: 60vw;
+    text-align: center;
+    color: #fff; /* White text color for better visibility */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  header img{
+    width: 2vw;
+    width: 10%;
+    margin: 0vw 1vw;
+  }
+  header h1{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0;
+    width: 30%;
+    font-size: 2vw;
+  }
+  header .title{
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+    align-items: center;
+    padding-right: 2vw;
+    font-size: 2rem;
+    width: 60%;
+  }
+
+  /* Styling for the main content section */
+  section {
+    width: 60vw;
+   display: flex;
+   background-color: #769898; /* Background color for the main content section */
+  }
+  /* Styling for the information container */
+  .info{
+    background-color: #769898;
+    width: 20vw;
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0vw;
+  }
+  .info > .first-row{
+    display: flex;
+    height: 10vh;
+    border: 2px solid black;
+    margin: 1vw;
+    flex-grow: 1;
+  }
+  /* Styling for the profile picture column in the information container */
+  .info > .first-row > .first-column{
+    width: 20vw;
+  }
+  .info > .first-row > .first-column img{
+    height: 10vh;
+    border-radius: 50px;
+  }
+  /* Styling for the details column in the information container */
+  .info > .first-row > .second-column{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .info > .first-row > .second-column > .name{
+    font-size: 1.5rem;
+    height: 5vh;
+  }
+
+  .info .first-row .second-column .iban{
+
+    font-size: small;
+  }
+  .info .first-row .second-column .iban img{
+    width: 1vw;
+  }
+
+  .info > .second-row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 25vh;
+    border: 2px solid black;
+    margin: 1vw;
+  }
+  .info > .second-row > .first-row{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    
+  }
+  .info > .second-row > .first-row > img{
+    width: 4rem;
+  }
+  .info > .second-row > .second-row{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+
+  }
+  .info > .second-row > .second-row > .block{
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+    padding: .2vw 2vw;
+    border: 1px solid black;
+  }
+  /* Styling for the icons in the second row block */
+  .second-row > .block > .icon{
+    /* Icon container takes up 3 times the space of other elements */
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+  }
+  .icon > img {
+    height: 3.5vh; /* Set the height of the icon image */
+  }
+  /* Styling for the current element in the second row block */
+  .second-row > .block > .current{
+    flex-grow: 3; /* Current element takes up 3 times the space of other elements */
+    font-size: larger; /* Larger font size for better visibility */
+  }
+
+  /* Styling for the third row in the information container */
+  .info > .third-row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3; /* Third row takes up 3 times the space of other rows */
+    border: 2px solid black;
+    margin: 1vw;
+  }
+  /* Styling for the title in the third row */
+  .info > .third-row > .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: .5rem; 
+  }
+  /* Styling for the transaction information in the third row */
+  .info > .third-row > .trans{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin: .1rem;
+    border: 1px solid black;
+  }
+  /* ... (Continue with styling for the second and third rows in the information container) ... */
+
+/* Styling for the text content */
+  .text{
+    position:static;
+    background-color: white;
+    width: 70vw;
+    padding: 0rem 1rem;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+textarea {
+  width: 100%; /* Metin alanının genişliği sayfanın genişliğine eşit olacak şekilde ayarlandı */
+  padding: 10px; /* Metin alanının iç kenar boşluğu */
+  margin-bottom: 10px; /* Metin alanının altındaki boşluk */
+  box-sizing: border-box; /* Kutu modelini kullanarak genişlik ve yükseklik ayarlamalarını daha etkili hale getirir */
+  resize: vertical; /* Metin alanının yalnızca dikey yönde yeniden boyutlandırılmasına izin verir */
+}
+
+/* İleri düzey stil (isteğe bağlı) */
+textarea:focus {
+  border: 2px solid #4CAF50; /* Metin alanına odaklandığında kenarlık rengini değiştirme */
+  outline: none; /* Odaklandığında varsayılan odak çerçevesini kaldırma */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8); /* Metin alanına odaklandığında hafif bir gölge ekler */
+}
+
+/* İsteğe bağlı: Placeholder rengi */
+textarea::placeholder {
+  color: #999; /* Placeholder rengi */
+}
+
+  /* Styling for the navigation section */
+  .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: fixed;
+    right: 0vw;
+    width: 20vw;
+    background-color: #769898;
+  }
+  /* Styling for the navigation blocks */
+  .navigation > .block{
+    display: flex;
+    height: 10vh;
+    border: 2px solid black;
+    margin: 1vw;
+    flex-grow: 1;
+  }
+
+  /* Styling for the images in the first column of navigation blocks */
+  .navigation > .block > .first-column img{
+    height: 10vh;
+    padding-left: 1vw;
+  }
+  /* Styling for the second column of navigation blocks */
+  .navigation > .block > .second-column{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2vw;
+    font-size: 1.25rem;
+  }
+  /* ... (Continue with styling for navigation blocks) ... */
+
+/* Styling for the footer section */
+  footer {
+    background-color: #2e6756; 
+    width: 60vw;
+    text-align: center;
+    color: #769898; /* White text color for better visibility */
+    width: 100%;
+  }
+  /* Styling for the first row in the footer */
+  footer > .first-row{
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Styling for the columns in the first row of the footer */
+  footer > .first-row > .column{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Styling for the title in each column of the footer */
+  .column > .title {
+    font-size: 1.5rem;
+    padding-bottom: .5vw;
+    text-decoration: underline;
+  }
+  /* Styling for the links in each column of the footer */
+  .column > a{
+    text-decoration: none;
+    color: black;
+  }
+  /* Styling for the second row in the footer */
+  footer > .second-row{
+    padding-top: 1vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ... (Continue with styling for footer rows and columns) ... */
+
+/* Media query for responsive design - max width 800px */
+  @media screen and (max-width: 800px){  /* ... (Adjust styling for smaller screens) ... */
+    .info .first-row .first-column{
+      width: 0vw;
+    }
+    .info .first-row .first-column img{
+      display: none;
+    }
+    .navigation .block .first-column{
+      width: 0vw;
+    }
+    .navigation .block .first-column img{
+      display: none;
+      padding-left: 0;
+    }
+    .navigation > .block > .second-column{
+      justify-content: center;
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: 600px){
+    body {
+      width: 100vw;
+    }
+
+    header {
+      width: 100vw;
+    }
+    section{
+      width: 100vw;
+      flex-direction: columns;
+    }
+
+    section > .text{
+      width: 100vw;
+    }
+
+            form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+  /* header img{
+    width: 20%;
+  }
+  header h1{
+    width: 20%;
+  }
+  header .title{
+    font-size: 1rem;
+    width: 60%;
+  } */
+    .info{
+      width: auto;
+      height: 10vh;
+      position: absolute;
+      flex-direction: row;
+    }
+
+    .info > .first-row{
+      display: flex;
+      height: 10vh;
+      border: 2px solid black;
+      margin: 1vw;
+      flex-grow: 1;
+    }
+    .info > .first-row > .first-column{
+      width: 20vw;
+    }
+    .info > .first-row > .first-column img{
+      height: 10vh;
+    }
+    .info > .first-row > .second-column{
+      display: flex;
+      flex-direction: column;
+      width: 28vw;
+      align-items: center;
+      justify-content: center;
+    }
+    .info > .first-row > .second-column > .name{
+      font-size: 1.5rem;
+      height: 5vh;
+    }
+  
+    .info .first-row .second-column .iban{
+      height: 5vh;
+    }
+    .info .first-row .second-column .iban img{
+      height: 3vh;
+    }
+  
+    .info > .second-row {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      height: 25vh;
+      border: 2px solid black;
+      margin: 1vw;
+    }
+    .info > .second-row > .first-row{
+      display: flex;
+      height: 10vh;
+      justify-content: center;
+      
+    }
+    .info > .second-row > .first-row > img{
+      width: 4rem;
+    }
+    .info > .second-row > .second-row{
+      display: flex;
+      flex-direction: column;
+      height: 10vh;
+  
+    }
+    .info > .second-row > .second-row > .block{
+      display: flex;
+      flex-direction: row;
+      height: 4vh;
+      justify-content: center;
+      align-items: center;
+      padding: .2vw 2vw;
+      border: 1px solid black;
+    }
+    .second-row > .block > .icon{
+      flex-grow: 3;
+      display: flex;
+      justify-content: center;
+    }
+    .icon > img {
+      height: 3.5vh;
+    }
+    .second-row > .block > .current{
+      flex-grow: 3;
+      font-size: larger;
+    }
+  
+    .info > .third-row {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 3;
+      border: 2px solid black;
+      margin: 1vw;
+    }
+    .info > .third-row > .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: .5rem; 
+    }
+    .info > .third-row > .trans{
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+      margin: .1rem;
+      border: 1px solid black;
+    }
+
+
+
+    .navigation{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      right: auto;
+      height: 20vw;
+      background-color: aqua;
+    }
+    .navigation > .block{
+      display: flex;
+      height: 10vh;
+      border: 2px solid black;
+      margin: 1vw;
+      flex-grow: 1;
+    }
+  
+    .navigation > .block > .first-column img{
+      height: 10vh;
+      padding-left: 1vw;
+    }
+    .navigation > .block > .second-column{
+      display: flex;
+      width: 20vw;
+      align-items: center;
+      justify-content: end;
+      padding-right: 2vw;
+      font-size: 1.25rem;
+    }
+  }
+  
