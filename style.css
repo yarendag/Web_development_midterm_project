@@ -80,7 +80,10 @@ body {
     font-size: 1.5rem;
     height: 5vh;
   }
+  .info > .first-row:hover{
+background-color: #fff;
 
+  }
   .info .first-row .second-column .iban{
 
     font-size: small;
@@ -120,6 +123,9 @@ body {
     align-items: center;
     padding: .2vw 2vw;
     border: 1px solid black;
+  }
+  .info > .second-row > .second-row > .block:hover{
+    background-color: #fff;
   }
   /* Styling for the icons in the second row block */
   .second-row > .block > .icon{
@@ -162,6 +168,9 @@ body {
     font-size: 1rem;
     margin: .1rem;
     border: 1px solid black;
+  }
+  .info > .third-row > .trans:hover{
+    background-color: #fff;
   }
   /* ... (Continue with styling for the second and third rows in the information container) ... */
 
@@ -246,7 +255,9 @@ textarea::placeholder {
     margin: 1vw;
     flex-grow: 1;
   }
-
+  .navigation > .block:hover{
+    background-color: #fff;
+  }
   /* Styling for the images in the first column of navigation blocks */
   .navigation > .block > .first-column img{
     height: 10vh;
